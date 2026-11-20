@@ -453,9 +453,8 @@ footer{
     .container {
         padding: 80px 40px 120px 40px;
         gap: 72px;
-        max-width: 360px;
-        align-self: center;
-        justify-self: center;
+        max-width: 1024px;
+       
     }
 
     .h1 {
@@ -540,14 +539,19 @@ footer{
     }
 
     .imgf4{
-        width: 361px;
-        height: 354px;
+        width: 100%;
+        height: auto;
         border-radius: 12px;
+        object-fit: contain;
     }
     .p-f4{
         display: none;
     }
 
+    .chu{
+        position: absolute;
+        top: 150px;
+    }
     
     .boncay {
         display: flex;
@@ -583,6 +587,9 @@ footer{
     .container {
         padding: 40px 20px 80px 20px;
         gap: 56px;
+        display: flex;
+        justify-self: center;
+        align-self: center;
     }
 
     .menu-bar {
@@ -683,33 +690,42 @@ footer{
         gap: 32px;
     }
 
-    /* Frame 4: 4 icon xếp dọc 1 cột */
-    .noidungFrame {
-        padding: 60px 20px 140px 20px;
-        min-height: auto;
+    .frame4{
+        position: relative;
+        height: 1000px;
+        display: flex;
     }
-
+    
+    .noidungFrame {
+        min-height: auto;
+        position: absolute;
+        top: 0;
+    }
+    .imgf4{
+        height: 500px;
+        object-fit: cover;
+    }
     .h1-f4 {
-        font-size: 28px;
+        font-size: 20px;
         text-align: center;
     }
 
     .boncay {
-        width: calc(100% - 32px);
-        grid-template-columns: 1fr; /* 1 cột duy nhất giống thiết kế Mobile */
-        margin-top: -100px;
-        padding: 36px 20px;
-        gap: 32px;
+        height: 630px;
+        position: absolute;
+        bottom: 0;
+       display: flex;
+       flex-direction: column;   
     }
 
-    /* Footer trên Mobile: Căn giữa tất cả */
     footer {
         padding: 48px 24px;
     }
 
     .noidungfooter {
-        align-items: center;
-        text-align: center;
+        align-items: flex-start;
+        justify-content: center;
+        padding-left: 150px;
     }
 
     .nar-footer {
