@@ -157,6 +157,7 @@ header{
 
 .s3{
     display: flex;
+    gap: 40px;
 }
 
 .noidung3{
@@ -725,7 +726,7 @@ footer{
     .noidungfooter {
         align-items: flex-start;
         justify-content: center;
-        padding-left: 150px;
+        padding-left: 100px;
     }
 
     .nar-footer {
