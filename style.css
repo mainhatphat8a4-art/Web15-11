@@ -620,8 +620,7 @@ footer{
 
     @media screen and (max-width: 768px) {
     body{
-        max-width: 100%;
-        overflow-x: hidden;
+        width: 100%;
         margin: 0 auto;
     }
     header{
@@ -777,10 +776,10 @@ footer{
     }
 
     .noidungfooter {
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         position: static;
-        left: 0;
+        padding-left: 100px;
     }
 
     .nar-footer {
