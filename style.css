@@ -736,8 +736,9 @@ footer{
     .heading-section4 {
         font-weight: 600;
         width: auto;
-        height: 94px;
+        height: 40px;
         max-width: 100%;
+        font-size: 30px;
     }
 
     .s4-p{
@@ -772,7 +773,7 @@ footer{
     }
 
     .boncay {
-        height: 630px;
+        height: 530px;
         position: absolute;
         bottom: 0;
        display: flex;
@@ -788,7 +789,7 @@ footer{
         align-items: flex-start;
         justify-content: center;
         position: static;
-        padding-left: 100px;
+        padding-left: 60px;
     }
 
     .nar-footer {
