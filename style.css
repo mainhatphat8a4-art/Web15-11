@@ -8,7 +8,7 @@ body{
     font-family: 'Poppins', sans-serif;
     max-width: 1440px;
     margin: 0 auto;
-    
+    width: 100%;
 }
 
 header{
@@ -476,7 +476,9 @@ footer{
 } 
 
 @media screen and (max-width: 1024px) {
-   
+    body{
+        width: 100%;
+    }
     .container {
         padding: 80px 40px 120px 40px;
         gap: 72px;
@@ -621,7 +623,7 @@ footer{
     @media screen and (max-width: 768px) {
     body{
         width: 100%;
-        margin: 0 auto;
+        max-width: 768px;
     }
     header{
         margin-left: 10px;
@@ -720,15 +722,22 @@ footer{
         color: #285E67;
         padding-left: 20px;   }
 
-    
+    .chu {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 16px;
+        left: 0;
+        right: 0;
+    }
     .section4 {
         padding: 48px 24px;
     }
 
     .heading-section4 {
         font-weight: 600;
-        width: 362px;
+        width: auto;
         height: 94px;
+        max-width: 100%;
     }
 
     .s4-p{
