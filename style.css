@@ -8,12 +8,14 @@ body{
     font-family: 'Poppins', sans-serif;
     max-width: 1440px;
     margin: 0 auto;
+    
 }
 
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px 20px 0 20px;
 }
 
 .menu-bar {
@@ -448,6 +450,30 @@ footer{
     flex : 1 1 360px;
 }
 
+@media screen and (max-width: 1032px){
+    .imgs3{
+        object-fit: cover;
+        width: 312px;
+        height: 100%;
+        border-radius: 12px; 
+    }
+
+    .cay1 , .cay2 , .cay3 ,.cay4{
+        padding-left: 38.5px;
+        padding-right: 38.5px;
+    }
+
+    .section2-img{
+        padding-top: 560px;
+    }
+
+    .img-s4 img{
+        object-fit: cover;
+        width: 312px;
+        height: 100%;
+        border-radius: 12px;
+    }
+} 
 
 @media screen and (max-width: 1024px) {
    
@@ -458,6 +484,14 @@ footer{
        
     }
 
+    .image{
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    .section1 img{
+        min-width: 280px;
+        height: auto;
+    }
     .h1 {
         font-size: 48px;
         text-align: center;
@@ -585,12 +619,24 @@ footer{
 
 
     @media screen and (max-width: 768px) {
+    body{
+        max-width: 100%;
+        overflow-x: hidden;
+        margin: 0 auto;
+    }
+    header{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
     .container {
         padding: 40px 20px 80px 20px;
         gap: 56px;
         display: flex;
-        justify-self: center;
+        flex-direction: column;
         align-self: center;
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
     }
 
     .menu-bar {
@@ -621,6 +667,11 @@ footer{
         text-align: center;
     }
 
+    .image{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
     .img1, .img2 {
         min-width: 100%; 
         flex: 1 1 100%;
@@ -645,6 +696,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 100%;
     }
     
     .s3 {
@@ -655,7 +707,7 @@ footer{
 
     .imgs3{
         height: 578px;
-        max-width: 360px;
+        max-width: 100%;
         object-fit: cover;
         border-radius: 16px;
     }
@@ -667,7 +719,7 @@ footer{
     .s3-text {
         text-align: left; 
         color: #285E67;
-    }
+        padding-left: 20px;   }
 
     
     .section4 {
@@ -720,23 +772,26 @@ footer{
     }
 
     footer {
+        height: auto;
         padding: 48px 24px;
     }
 
     .noidungfooter {
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
-        padding-left: 100px;
+        position: static;
+        left: 0;
     }
 
     .nar-footer {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Chia 4 link thành 2 cột x 2 hàng giống ảnh Mobile */
+        grid-template-columns: repeat(2, 1fr); 
         gap: 20px 40px;
     }
-
+    .lgf{
+        display: flex
+    }
     .icon-footer {
         gap: 28px;
     }
-    
 }
